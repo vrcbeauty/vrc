@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VRC BEAUTY - Beauty, confidence, and quality in one place.">
+  <title>VRC BEAUTY | Catalogue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="VRC BEAUTY home">
+      <img src="logo.png" alt="VRC BEAUTY logo">
+    </a>
+    <button class="cart-button" id="openCart" aria-label="Open shopping cart">
+      <span class="cart-icon" aria-hidden="true">🛒</span>
+      <span class="cart-label">Cart</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">WELCOME TO</p>
+        <h1>VRC BEAUTY</h1>
+        <p>Beauty, confidence, and quality in one place.</p>
+        <a class="hero-button" href="#products">Shop the catalogue</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About VRC BEAUTY</h2>
+      <p>
+        VRC BEAUTY is a modern beauty and lifestyle store dedicated to helping customers
+        look and feel their best. We offer a carefully selected range of beauty,
+        personal-care, fashion, and lifestyle products designed to suit different tastes,
+        needs, and budgets.
+      </p>
+      <p>
+        We focus on quality, style, affordability, and customer satisfaction, with a
+        simple catalogue experience that makes it easy to explore products and place an order.
+      </p>
+      <div class="contact-strip">
+        <span>📍 Nigeria</span>
+        <a href="tel:+2348145935394">☎ +234 814 593 5394</a>
+        <a href="mailto:olat92873@gmail.com">✉ olat92873@gmail.com</a>
+      </div>
+    </section>
+
+    <section class="catalogue" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR PRODUCTS</p>
+          <h2>Shop VRC BEAUTY</h2>
+        </div>
+        <input id="searchInput" class="search" type="search" placeholder="Search products..." aria-label="Search products">
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>VRC BEAUTY</strong>
+    <span>Beauty, confidence, and quality in one place.</span>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-header">
+      <div>
+        <h2>Your Cart</h2>
+        <p id="cartTimer" class="timer">Cart expires in 12:00:00</p>
+      </div>
+      <button class="icon-button" id="closeCart" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <div class="empty-cart-icon">🛒</div>
+      <h3>Your cart is empty</h3>
+      <p>Add products from the catalogue and come back here when you're ready.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="cartTotal">₦0</strong>
+      </div>
+      <button class="checkout-button" id="checkoutButton">Order via WhatsApp</button>
+      <button class="clear-button" id="clearCart">Clear Cart</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
